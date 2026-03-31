@@ -2,11 +2,12 @@ public class Gato extends Animal {
     private boolean domesticado;
 
     public Gato(boolean domesticado) {
+        super();
         this.domesticado = domesticado;
     }
 
     public Gato(){
-
+        super();
     }
 
     public boolean getDomesticado(){

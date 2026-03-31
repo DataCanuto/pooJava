@@ -2,11 +2,12 @@ public class Cachorro extends Animal{
     private String raca;
 
     public Cachorro(String raca) {
+        super();
         this.raca = raca;
     }
 
     public Cachorro(){
-
+        super();
     }
 
     public String getRaca() {

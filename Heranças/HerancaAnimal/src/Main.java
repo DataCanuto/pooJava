@@ -1,7 +1,6 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        
 
         Gato azula = new Gato();
         azula.especie = "British Short-Hair";
@@ -11,6 +10,9 @@ public class Main {
 
         azula.animalData();
 
+        System.out.println("\n===========================\n" );
+        
+
         Cachorro borogodo = new Cachorro();
         borogodo.especie = "Caramelo";
         borogodo.idade = 7;
@@ -19,8 +21,6 @@ public class Main {
 
         borogodo.animalData();
 
-
-
-
+        System.out.println("===== Programa Finalizado =====");
     }
 }

@@ -23,7 +23,7 @@ public abstract class Animal {
     public abstract void emitirSom();
 
     public void animalData(){
-        System.out.println("Dados do animal");
+        System.out.println("Dados do animal:");
         System.out.println("Especie: " + especie);
         setTextIdade();
     }
