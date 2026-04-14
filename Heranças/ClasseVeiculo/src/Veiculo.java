@@ -58,9 +58,5 @@ public class Veiculo {
         }else{
             System.out.println("Autonomia confortável: " + autonomia +"km");
         }
-    }
-
-
-
-
+    } 
 }
