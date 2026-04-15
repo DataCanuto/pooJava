@@ -1,35 +1,23 @@
 public class Main {
     public static void main(String[] args) {
-        Pessoa Pedro = new Pessoa("Pedro", 25);
-        Pedro.setInfo();
 
-        System.out.println("-----------------------------");
+        Aluno a[] = new Aluno[10];
+        Bolsista b[] = new Bolsista[10];
 
-        Funcionario jose = new Funcionario();
-        jose.setNome("Jose");
-        jose.setIdade(40);
-        jose.setCargo("Diretor");
-        jose.setSalario(10000);
-        jose.setInfo();
 
-        System.out.println("-----------------------------");
+        a[0] = new Aluno("Maria", "Feminino", 20, "Engenharia", 1500);
+        a[1] = new Aluno("João", "Masculino", 22, "Medicina", 2000);
+        b[0] = new Bolsista("Ana", "Feminino", 19, "Direito", 1800, 900);
 
-        Professor maria = new Professor();
-        maria.setNome("Maria");
-        maria.setIdade(35);
-        maria.setDisciplina("Matemática");
-        maria.setInfo();
+        a[0].realizarMatricula();
 
-        System.out.println("-----------------------------");
+        a[0].pagarMensalidade();       
 
-        Aluno joao = new Aluno();
-        joao.setNome("João");
-        joao.setIdade(20);
-        joao.setCurso("Engenharia");
-        joao.setMensalidade(1500);
-        joao.setInfo();
+        a[0].setInfo();
+
         
-        
+
+          
     }
     
 }

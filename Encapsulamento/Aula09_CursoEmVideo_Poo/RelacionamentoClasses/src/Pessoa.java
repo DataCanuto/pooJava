@@ -1,15 +1,14 @@
-public abstract class Pessoa {
+public class Pessoa {
     private String nome;
-    private String sexo;
     private int idade;
-    
-    public Pessoa(String nome, String sexo, int idade) {
+    private String sexo;
+
+    public Pessoa(String nome, int idade, String sexo) {
         this.nome = nome;
-        this.sexo = sexo;
         this.idade = idade;
+        this.sexo = sexo;
     }
     public Pessoa() {
-
     }
     public String getNome() {
         return nome;
@@ -29,15 +28,10 @@ public abstract class Pessoa {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-    
-    public void setInfo(){
-        System.out.println(" - Informações:" + getClass().getSimpleName());
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Idade: " + this.idade);
+
+    public void fazerAniversario() {
+        this.setIdade(getIdade() + 1);
     }
 
-    public void fazerAniversario(){
-        this.idade++;
-        System.out.println("Parabéns! " + this.nome + " agora tem " + this.idade + " anos.");
-    }
+    
 }
