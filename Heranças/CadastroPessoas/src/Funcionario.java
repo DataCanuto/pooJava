@@ -1,10 +1,12 @@
 public class Funcionario extends Pessoa {
     private String cargo;
+    private String setor;
     private double salario;    
 
-    public Funcionario(String nome, int idade, String sexo, String cargo, double salario) {
+    public Funcionario(String nome, int idade, String sexo, String cargo, String setor, double salario) {
         super(nome, sexo, idade);
         this.cargo = cargo;
+        this.setor = setor;
         this.salario = salario;
     }
     public Funcionario() {
@@ -22,6 +24,13 @@ public class Funcionario extends Pessoa {
     public void setSalario(double salario) {
         this.salario = salario;
     }
+    public String getSetor() {
+        return setor;
+    }
+    public void setSetor(String setor) {
+        this.setor = setor;
+    }
+
     
     @Override
     public void setInfo(){

@@ -31,7 +31,7 @@ public abstract class Pessoa {
     }
     
     public void setInfo(){
-        System.out.println(" - Informações:" + getClass().getSimpleName());
+        System.out.println("\n - Informações:" + getClass().getSimpleName());
         System.out.println("Nome: " + this.nome);
         System.out.println("Idade: " + this.idade);
     }
