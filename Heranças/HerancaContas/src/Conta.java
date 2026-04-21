@@ -1,13 +1,20 @@
+package sistemasafebankdigital;
+
 public class Conta {
     private String titular;
     private double saldo;
+    private int conta;
+    private int digitoVerificador;
+    private int agencia;
 
     
-    public Conta(String titular, double saldo) {
+    public Conta(String titular, double saldo, int conta, int dv, int agencia) {
         this.titular = titular;
         this.saldo = saldo;
+        this.conta = conta;
+        this.digitoVerificador = dv;
+        this.agencia = agencia;
     }
-
 
     public Conta() {
     }
@@ -30,6 +37,22 @@ public class Conta {
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
+    }
+
+    public int getConta() {
+        return conta;
+    }
+
+    public int getDigitoVerificador() {
+        return digitoVerificador;
+    }
+
+    public int getAgencia() {
+        return agencia;
+    }
+    
+    private void exibirConta(){
+        System.out.println(this.getConta()+"-"+this.getDigitoVerificador());
     }
 
     public void sacar(double valor) {
