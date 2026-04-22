@@ -1,10 +1,16 @@
 public class Corrente extends Conta {
     private double limite;
 
-    public Corrente (){}
+    public Corrente() {}
 
-    public Corrente(double limite){
-        super();
+    // Construtor sem limite (limite pode ser definido depois via setLimite)
+    public Corrente(String titular, String agencia, String numeroConta, double saldo, String senha) {
+        super(titular, agencia, numeroConta, saldo, senha);
+    }
+
+    // Construtor completo com limite
+    public Corrente(String titular, String agencia, String numeroConta, double saldo, String senha, double limite) {
+        super(titular, agencia, numeroConta, saldo, senha);
         this.limite = limite;
     }
 

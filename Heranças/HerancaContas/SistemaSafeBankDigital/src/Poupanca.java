@@ -2,13 +2,19 @@ public class Poupanca extends Conta {
     private double juros;
     private double rendimento;
 
-    public Poupanca(double juros, double rendimento) {
-        super();
+    public Poupanca() {}
+
+    // Construtor sem juros/rendimento (podem ser definidos depois via setters)
+    public Poupanca(String titular, String agencia, String numeroConta, double saldo, String senha) {
+        super(titular, agencia, numeroConta, saldo, senha);
+    }
+
+    // Construtor completo com juros e rendimento
+    public Poupanca(String titular, String agencia, String numeroConta, double saldo, String senha, double juros, double rendimento) {
+        super(titular, agencia, numeroConta, saldo, senha);
         this.juros = juros;
         this.rendimento = rendimento;
     }
-
-    public Poupanca(){}
 
     public double getJuros() {
         return juros;
@@ -47,4 +53,3 @@ public class Poupanca extends Conta {
         System.out.println("Rendimento calculado com sucesso");
     }
 } 
-
